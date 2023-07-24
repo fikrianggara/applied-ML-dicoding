@@ -1,0 +1,7 @@
+1. merge data
+2. bikin fitur yang sesuai dengan indikator analisis fundamental
+3. handle missing value dengan :
+ - drop data
+ - dengan PCA (terhadap seluruh kolom)
+4. mulai clustering dengan drop data vs dengan dimensionality reduction
+5. evaluasi
