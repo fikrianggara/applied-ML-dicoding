@@ -28,11 +28,11 @@ Oleh karena itu, penggunaan teknik _machine learning_ dalam menentukan harga mob
 
 ### Solution Approach
 
-Pada proyek ini, penulis menawarkan untuk menggunakan 3 algoritma dalam melakukan prediksi harga mobil dan menentukan algoritma yang paling baik prediksinya diantara lainnya. Adapun algoritma yang dipilih yaitu:
-
-- Regresi Linier
-- _Decision Tree_
-- KNN (_K-Nearest Neighbors_)
+Pada proyek ini, penulis menggunakan beberapa algoritma untuk melakukan pembangunan _cluster_, yaitu :
+- _K-means_
+- _DBSCAN_
+- _K-means_ dengan _dimenstionality reduction_
+- _DBSCAN_ dengan _dimenstionality reduction_
 
 Berikut adalah penjelasan yang lebih mendalam mengenai pemilihan ketiga algoritma (Regresi Linier, _Decision Tree_, KNN) sebagai solusi untuk memprediksi harga mobil dan bagaimana masing-masing algoritma dapat membantu menjawab pertanyaan masalah:
 
