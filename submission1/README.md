@@ -1,4 +1,6 @@
-# Laporan Proyek Machine Learning - Fikri Septrian Anggara
+# **Penerapan Algoritma _Clustering_ untuk Pengelompokkan Saham IDX Berdasarkan Indikator-indikator Fundamental - Submission Machine Learning Terapan Dicoding**
+
+oleh: Fikri Septrian Anggara (fikri_anggara_2c3r)
 
 ## 1. Domain Permasalahan
 
@@ -169,17 +171,56 @@ Untuk pembangunan klaster, penulis hanya menggunakan indikator fundamental yang 
   ​ Gambar 1. _Persentase null value setiap fitur_
   Berdasarkan gambar 1, diketahui bahwa fitur DE, CR, EPS, dan P\S memiliki null value. null value tersebut bisa diakibatkan karena ada komponen penyusun indikator yang tidak memiliki nilai. tidak adanya nilai tersebut bisa jadi dikarenakan pelaporan keuangan saham belum lengkap, atau saham tersebut sudah tidak melantai di BEI.
 
-  untuk mengatasi null value, penulis akan melakukan imputasi menggunakan median.
-
 - Pemeriksaan distribusi data menggunakan boxplot.
   ![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/npm_dist.png?raw=true)
   ![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/de_dist.png?raw=true)
   ![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/cr_dist.png?raw=true)
-  ![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/pe_dist.png?raw=true)
+
+  ![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/eps_dist.png?raw=true)
+
+  gambar 2. _distribusi indikator per sektor_
+
+Berdasarkan gambar 2, seluruh indikator memiliki pencilan baik atas maupun bawah. data outlier tentu akan mempengaruhi pembangunan klaster, namun penulis ingin agar semua saham yang datanya tersedia pada data laporan keuangan agar termasuk ke dalam pengelompokkan, sehingga penulis memutuskan untuk tidak membuang data outlier tersebut.
 
 ![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/sector_dist.png?raw=true)
 
-![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/npe_de_dist.png?raw=true)
+gambar 3. _distribusi saham per sektor_
+
+Sektor yang paling banyak melantai pada BEI ialah sektor finansial yaitu sebesar 16.5% dari keseluruhan jumlah perusahaan dan paling sedikit sektor teknologi sebesar 2.8% dari keseluruhan jumlah perusahaan.
+
+![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/corr.png?raw=true)
+
+gambar 4. _matriks korelasi indikator_
+
+Berdasarkan matriks korelasi, dapat terlihat bahwa tidak ada korelasi yang kuat (>0.75) di antar indikator fundamental. namun terdapat korelasi moderat pada indikator Eearning per Shares dan Current Ratio.
+
+### 4.6. Imputasi Data
+
+Dalam menangani _null value_, penulis melakukan imputasi data menggunakan median untuk tiap indikator. nilai median dipilih karena lebih _robust_ terhadap _outlier_ dibandingkan imputasi menggunakan rata rata.
+
+### 4.7. _Scaling_ Data
+
+Scalling data perlu dilakukan karena beberapa algoritma klaster dan tuning klaster sensitif terhadap skala data. Penulis menggunakan algoritma _min-max scaler_ untuk scaling data.
+
+## 5. Modeling
+
+Terdapat berbagai algoritma dalam membangun klaster peneliti menggunakan 3 buah algoritma, yaitu:
+
+- K-means. Kmeans (KMC) merupakan salah satu algoritma unsupervised paling sederhana yang digunakan untuk menyelesaikan berbagai masalah pengelompokan. Tugas clustering adalah mengelompokkan N sampel data ke dalam 𝐾𝐾 kategori. Ide dasar KMC adalah bahwa dengan pengelompokan awal tetapi tidak optimal, pindahkan setiap titik ke pusat terdekatnya yang baru, perbarui pusat pengelompokan dengan menghitung rata-rata titik anggota dan ulangi proses relokasi dan pembaruan sampai kriteria konvergen terpenuhi [[2]](https://www.sciencedirect.com/science/article/pii/S1877050922022207).
+- GMM
+- DBSCAN. DBSCAN adalah algoritma pengelompokan unsupervised yang mengandalkan gagasan cluster berbasis kepadatan
+  dirancang untuk menemukan cluster yang memiliki bentuk beragam. Algoritma ini membutuhkan dua input yaitu minPts dan eps
+  (radius). Objek dengan tetangga lebih dari minPts dalam radius dianggap sebagai titik inti. Semua tetangga di dalam
+  jari-jari ε dari titik inti dipertimbangkan dalam cluster yang sama dengan titik inti (disebut kepadatan langsung yang dapat dijangkau). Bukan inti
+  titik dalam klaster ini disebut titik perbatasan, dan semua titik dalam klaster yang sama memiliki kepadatan yang terhubung. Poin
+  yang kepadatannya tidak dapat dijangkau dari titik inti mana pun yang diberi label sebagai noise (pencilan, bukan milik kluster mana pun)
+
+berikut adalah penjelasan masing masing algoritma.
+| No. | Algoritma | Parameter | Penggunaan
+| :-: | ---------------- |----------- | ------|
+| 1 | K-Means | Banyak klaster | general-purpose |
+| 2 | GMM | Banyak Komponen dan tipe kovarians | estimasi kerapatan |
+| 3 | DBSCAN | ukuran ketetanggaan dan minimum sampel | | |
 
 ​ Tabel 1. <em> Tipe dan Jumlah Data Pada Dataset Awal </em>
 
