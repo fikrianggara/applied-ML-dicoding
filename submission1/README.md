@@ -149,9 +149,9 @@ berdasarkan paper [[1]](fdsafdsavfdsa), terdapat 5 indikator keuangan yang mampu
 - **Earning per share (EPS)**: perbandingan laba/profit (net income) setelah dikurangi pajak dengan jumlah saham yang beredar (outstanding shares). Digunakan untuk melihat profitabilitas perusahaan. Outstanding Shares diperoleh dari Share Issued - Treasury Shares Number. <br> `EPS = Net Income / (share issued - treasury shares number)`
 - **P/E Ratio**: perbandingan antara harga perlembar saham dengan laba tahunan perlembar (EPS). Untuk membandingkan nilai relatif antar perusahaan. <br> ` P/E ratio = share price/EPS`
 
-### 4.4. Feature Selection
+### 4.4. _Feature Selection_
 
-fitur/kolom yang digunakan untuk pemodelan klaster yaitu :
+Untuk pembangunan klaster, penulis hanya menggunakan indikator fundamental yang diperoleh dari hasil rekayasa fitur. selain itu penulis menambahkan kode, nama perusahaan dan sektor perusahaan. keseluruhan fitur yang digunakan ialah:
 
 - **Code**
 - **Name**
@@ -162,7 +162,24 @@ fitur/kolom yang digunakan untuk pemodelan klaster yaitu :
 - **Earning per Share**
 - **Price to EPS**
 
-Penulis me-drop fitur selain fitur di atas
+### 4.5. _Exploratory Data Analisis_ (EDA)
+
+- Pemeriksaan null value
+  ![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/null_value.png?raw=true)
+  ​ Gambar 1. _Persentase null value setiap fitur_
+  Berdasarkan gambar 1, diketahui bahwa fitur DE, CR, EPS, dan P\S memiliki null value. null value tersebut bisa diakibatkan karena ada komponen penyusun indikator yang tidak memiliki nilai. tidak adanya nilai tersebut bisa jadi dikarenakan pelaporan keuangan saham belum lengkap, atau saham tersebut sudah tidak melantai di BEI.
+
+  untuk mengatasi null value, penulis akan melakukan imputasi menggunakan median.
+
+- Pemeriksaan distribusi data menggunakan boxplot.
+  ![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/npm_dist.png?raw=true)
+  ![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/de_dist.png?raw=true)
+  ![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/cr_dist.png?raw=true)
+  ![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/pe_dist.png?raw=true)
+
+![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/sector_dist.png?raw=true)
+
+![](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/npe_de_dist.png?raw=true)
 
 ​ Tabel 1. <em> Tipe dan Jumlah Data Pada Dataset Awal </em>
 
