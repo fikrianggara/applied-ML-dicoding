@@ -246,7 +246,7 @@ Berdasarkan plot jumlah klaster vs skor silhouette, skor terbaik berada pada jum
 #### 5.2.2. _Tuning GMM_
 
 Pada Kmeans hyperparameter yang perlu dituning ialah banyaknya komponen dan tipe kovarians (spherical, tied, full, atau diagonal).
-Tuning GMM dilakukan dengan teknik grid search untuk perhitungan _Bayesian Information Criterion_ [[3]](https://scikit-learn.org/stable/auto_examples/mixture/plot_gmm_selection.html) setiap kombinasi banyak komponen dan tipe kovarians. Semakin rendah skor BIC, semakin baik.
+Tuning GMM dilakukan dengan teknik grid search untuk perhitungan _Bayesian Information Criterion_. setiap kombinasi banyak komponen dan tipe kovarians. Semakin rendah skor BIC, semakin baik.
 
 ![Alt text](image-4.png)
 gambar 8. plot skor banyak komponen per tipe kovarians vs skor BIC
@@ -339,10 +339,8 @@ Dari hasil penelitian, diketahui bahwa :
 
 ### Referensi
 
-[1] A. D. Prastiwi, "Urban Heat Island di Kota Tangerang Selatan," _Jurnal Geosaintek_, vol. 8, no. 2, hal. 182, 2022. [Online]. Tersedia: https://doi.org/10.12962/j25023659.v8i2.11721.
+[1] Csesznik, Z., Gaspar, S., Thalmeiner, G., Zoltan, Z. (2021). Examining the effectiveness of fundamental analysis in a long-term stock portfolio.Economic Annals-ХХI, 190, 119-127. [Online]. Tersedia: http://ea21journal.world/index.php/ea-v190-11/
 
-[2] I. Maula, L. U. Hasanah, dan A. Tholib, "Analisis prediksi harga rumah di Jabodetabek menggunakan Multiple Linear Regression," _Jurnal Informatika Kaputama (JIK)_, vol. 7, no. 2, hal. 216-224, 2023. [Online]. Tersedia: https://doi.org/10.59697/jik.v7i2.135.
+[2] Pranata, K. S., Gunawan, A. A. S., Gaol, F. L. (2023). Development clustering system IDX company with k-means algorithm and DBSCAN based on fundamental indicator and ESG. Procedia Computer Science, 216, 319-327. [Online]. Tersedia: https://doi.org/10.1016/j.procs.2022.12.142
 
-[3] M. L. Mu’tashim, S. A. Damayanti, H. N. Zaki, T. Muhayat, dan R. Wirawan, "Analisis prediksi harga rumah sesuai spesifikasi menggunakan Multiple Linear Regression," _Jurnal Informatik_, vol. 17, hal. 238-245, 2021. [Online]. Tersedia: https://doi.org/10.52958/iftk.v17i3.3635.
-
-[4] C. Haryanto, N. Rahaningsih, dan F. Muhammad Basysyar, "Komparasi algoritma machine learning dalam memprediksi harga rumah," _JATI (Jurnal Mahasiswa Teknik Informatika)_, vol. 7, no. 1, hal. 533-539, 2023. [Online]. Tersedia: https://doi.org/10.36040/jati.v7i1.6343.
+[3] Rahmah, N., & Sitanggang, I. S. (2016). Determination of Optimal Epsilon (Eps) Value on DBSCAN Algorithm to Clustering Data on Peatland Hotspots in Sumatra. IOP Conference Series: Earth and Environmental Science. 31. [Online]. Tersedia https://iopscience.iop.org/article/10.1088/1755-1315/31/1/012012
