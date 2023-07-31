@@ -1,8 +1,6 @@
-# **Penerapan Algoritma _Clustering_ untuk Pengelompokkan Saham IDX Berdasarkan Indikator-indikator Fundamental - Submission Machine Learning Terapan Dicoding**
+# Laporan Proyek _Machine Leraning_ - Fikri Septrian Anggara
 
-oleh: Fikri Septrian Anggara (fikri_anggara_2c3r)
-
-## 1. Domain Permasalahan
+## 1. Domain Proyek
 
 Ada berbagai cara untuk melakukan investasi seperti investasi tanah, properti, emas hingga barang yang tidak memiliki bentuk seperti saham. Belakangan ini investasi saham mulai digemari di Indonesia. hal itu terlihat dari bermunculannya platform dan aplikasi untuk investasi saham seperti Bibit, IPOT, Ajaib, dan sebagainya.
 
@@ -10,7 +8,7 @@ Ada dua jenis investor atau orang yang melakukan investasi, yaitu investor jangk
 
 Dunia kecerdasan artifisial (_artificial intelligence_) semakin berkembang tak terkecuali pada ranah finansial dan dunia persahaman. Sudah banyak penerapan algoritma _machine learning_ pada analisis teknikal untuk memprediksi harga saham yang memudahkan investor awam atau mahir untuk memilih saham yang akan dibeli. Meskipun begitu, masih belum banyak pembuatan model yang bertujuan untuk membantu melakukan analisis fundamental keungan perusahaan untuk investasi jangka panjang. Analisis fundamental cenderung lebih sulit dilakukan untuk investor pemula karena banyaknya item-item pada laporan keuangan maupun sepak terjang perusahaan tertentu untuk dianalisis.
 
-Pada penelitian ini, dilakukan pendekatan _machine learning_ untuk membantu investor dalam melakukan analisis fundamental melalui pengelompokkan saham-saham perusahaan di Indonesia berdasarkan indikator-indikator fundamental untuk kemudian diharapkan dapat membantu memilih saham yang akan diinvestasikan.
+Pada penelitian ini, dilakukan upaya pembangunan model _machine learning_ untuk membantu investor jangka panjang dalam melakukan analisis fundamental. Model digunakan saat investor ingin melihat pola pengelompokkan saham berdasarkan indikator fundamental. Apabila seorang investor selesai melakukan analisis fundamental untuk saham tertentu dan ternyata saham tersebut undervalued (direkomendasikan untuk dibeli), maka investor dapat lebih cepat menemukan saham lain yang berada di kelompok yang sama dan bisa memasukkan saham tersebut ke portfolionya.
 
 Penelitian ini menggunakan beberapa algoritma dalam upaya pengelompokkan saham yang terdaftar pada Bursa Efek Indonesia (BEI/IDX) berdasarkan indikator fundamental, yaitu algoritma _Kmeans_, _Gaussian Mixture Models_ (GMM), dan _Density-Based Spatial Clustering of Application with Noise_ (DBSCAN). Dari penelitian ini diperoleh hasil bahwa algoritma GMM merupakan algoritma terbaik untuk keseluruhan metrik evaluasi pada studi kasus ini, dengan skor silhouette 0.96, indeks Calinski-Harabasz 23261.81, indeks Davies-Bouldin 0.18.
 
@@ -18,7 +16,7 @@ Penelitian ini menggunakan beberapa algoritma dalam upaya pengelompokkan saham y
 
 Dalama melakukan analisis fundamental, diperlukan keahlian untuk menganalisa kondisi perusahaan sehingga sampai pada kesimpulan apakah harga saham sekarang itu undervalued atau overvalued. Salah satu sumber yang digunakan pada analisis ini yaitu laporan keuangan (_financial statement_). Terdapat banyak item pada laporan ini yang membuatnya sulit untuk dianalisis oleh investor awam.
 Apabila seorang investor memiliki suatu saham dan telah menghasilkan keuntungan yang memuaskan, maka akan lebih mudah bagi investor tersebut untuk memilih saham lain yang berbeda apabila investor tesrebut mengetahui saham lain tersebut memiliki karakteristik yang mirip dengan saham yang telah dimiliki. Sebaliknya, apabila investor memiliki saham yang merugi, maka apabila investor tersebut mengetahui saham lain yang memiliki karakter yang sama dengan saham yang merugi, investor tersebut bisa menghindari saham dengan karakteristik yang sama.
-Dengan model pengelompokkan saham berdasarkan karakteristik berupa indikator fundamental, investor dapat lebih mudah menentukan saham apa yang harus dihindari apabila diketahui merugi, dan saham apa yang berpotensi menghasilkan keuntungan.
+Dengan model pengelompokkan saham berdasarkan karakteristik berupa indikator fundamental, investor dapat lebih mudah menentukan saham apa yang harus dihindari apabila diketahui overvalued, dan saham apa yang undervalued.
 
 ### 2.1. Problem Statements
 
@@ -323,19 +321,21 @@ Tabel 2. _evaluasi klaster sebelum tuning_
 
 Tabel 3. _evaluasi klaster setelah tuning_
 
-Berdasarkan tabel 2 dan 3, diketahui bahwa :
+Untuk memperoleh model terbaik, penulis mengevaluasi model menggunakan skor silhouete, Indeks Calinski-Harabasz, dan Indeks Davies-Bouldin. dengan rule sebagai berikut :
 
-- secara umum algoritma GMM merupakan algoritma yang paling baik, baik sebelum dan sesudah dituning.
-- secara rata-rata, terjadi peningkatan performa untuk algoritma GMM dan DBSCAN, sementara KMeans mengalami penurunan performa.
+- model terbaik berdasarkan skor silhouette ialah yang model dengan skor silhouette **tertinggi**.
+- model terbaik berdasarkan Indeks Calinski-Harabasz ialah model dengan Indeks Calinski-Harabasz **tertinggi**.
+- model terbaik berdasarkan Indeks Davies-Bouldin ialah model dengan Indeks Davies-Bouldin **terendah**.
+
+berdasarkan tabel 2 dan 3, diperoleh insight:
+
+- Algoritma GMM memiliki skor silhouette **tertinggi**, Indeks Calinski-Harabasz **tertinggi** dan Indeks Davies-Bouldin **terendah**. maka berdasrakan rule pemilihan model terbaik, algoritma GMM merupakan algoritma yang paling baik, baik sebelum dan sesudah dituning.
+- Terjadi peningkatan performa untuk algoritma GMM dan DBSCAN, sementara KMeans mengalami penurunan performa. hal tersebut terlihat dari peningkatan skor silhouette dan Indeks Calinski-Harabasz, serta penurunan Indeks Davies-Bouldin.
 - peningkatan performa paling signifikan terjadi pada algoritma GMM, di mana skor silhouette naik 2% (dari 0.94 ke 0.96), indeks Calinski-Harabasz naik 47% (dari 16402.69 ke 76911.77) dan indeks Davies-Bouldin turun 14% (dari 0.13 ke 0.15)
 
 ## 7. Kesimpulan
 
-Dari hasil penelitian, diketahui bahwa :
-
-1. terdapat 5 indikator fundamental yang cukup untuk digunakan dalam melakukan analisis fundamental, yaitu **Net Profit Margin**, **Debt to Equity Ratio**, **Current Ratio**, **Earning per Share**, **Price to EPS**.
-2. Semua indikator tersebut belum terdapat pada dataset yang digunakan sehingga dilakukan rekayasa fitur untuk memperoleh indikator fundamental. setelah dilakukan rekayasa fitur, penulis melakukan seleksi fitur, imputasi data, _scaling_ data, pembangunan model dengan dan tanpa tuning, hingga evaluasi model.
-3. Dari hasil perbandingan dan tuning model _clustering_ **Kmeans, GMM, DBSCAN**, algoritma **GMM** hasil tuning merupakan algoritma yang paling baik dalam mengelompokkan data saham berdasarkan indikator fundamental.
+Dari hasil penelitian diketahui bahwa terdapat 5 indikator fundamental yang cukup untuk digunakan dalam melakukan analisis fundamental, yaitu **Net Profit Margin**, **Debt to Equity Ratio**, **Current Ratio**, **Earning per Share**, **Price to EPS**. Semua indikator tersebut belum terdapat pada dataset yang digunakan sehingga dilakukan rekayasa fitur untuk memperoleh indikator fundamental. setelah dilakukan rekayasa fitur, penulis melakukan seleksi fitur, imputasi data, _scaling_ data, pembangunan model dengan dan tanpa tuning, hingga evaluasi model. Dari hasil perbandingan dan tuning model _clustering_ **Kmeans, GMM, DBSCAN**, diketahui bahwa model **GMM** hasil tuning merupakan model terbaik dalam mengelompokkan data saham berdasarkan indikator fundamental. Dengan adanya data hasil klaster model GMM setelah dituning, investor dapat dengan cepat mendeteksi pengelompokkan saham. Sebagai contoh, diketahui bahwa saham BBRI merupakan saham yang layak untuk dimasukkan ke dalam portfolio, saham yang memiliki indikator fundamental yang mirip dengan saham BBRI ialah saham yang berada di klaster yang sama dengan BBRI. Berdasarkan hasil analisis, BBRI berada di klaster 2, maka saham lain yang mirip indikatornya dengan BBRI yaitu saham BIRD, BTPN, BEST dan saham lain dengan total sebanyak 41 saham.
 
 ### Referensi
 
