@@ -1,0 +1,390 @@
+,account,type
+0,BS,Long Term Equity Investment
+1,BS,Additional Paid In Capital
+2,BS,Long Term Debt
+3,BS,Ordinary Shares Number
+4,BS,Total Assets
+5,BS,Cash Equivalents
+6,BS,Construction In Progress
+7,BS,Accounts Receivable
+8,BS,Payables
+9,BS,Total Tax Payable
+10,BS,Goodwill
+11,BS,Properties
+12,BS,Other Receivables
+13,BS,Gross Accounts Receivable
+14,BS,Minority Interest
+15,BS,Prepaid Assets
+16,BS,Total Liabilities Net Minority Interest
+17,BS,Current Debt And Capital Lease Obligation
+18,BS,Total Capitalization
+19,BS,Net Tangible Assets
+20,BS,Gross
+21,BS,Common Stock
+22,BS,Long Term Debt And Capital Lease Obligation
+23,BS,Retained Earnings
+24,BS,Net
+25,BS,Goodwill And Other Intangible Assets
+26,BS,Share Issued
+27,BS,Other Equity Interest
+28,BS,Accumulated Depreciation
+29,BS,Buildings And Improvements
+30,BS,Total Equity Gross Minority Interest
+31,BS,Common Stock Equity
+32,BS,Non Current Pension And Other Postretirement Benefit Plans
+33,BS,Cash Financial
+34,BS,Other Capital Stock
+35,BS,Non Current Deferred Taxes Liabilities
+36,BS,Tangible Book Value
+37,BS,Total Debt
+38,BS,Land And Improvements
+39,BS,Capital Stock
+40,BS,Other Properties
+41,BS,Accounts Payable
+42,BS,Net Debt
+43,BS,Stockholders Equity
+44,BS,Other Payable
+45,BS,Invested Capital
+46,BS,Working Capital
+47,BS,Machinery Furniture Equipment
+48,BS,Current Debt
+49,BS,Allowance For Doubtful Accounts Receivable
+50,BS,Cash And Cash Equivalents
+51,BS,Other Current Borrowings
+52,BS,Dueto Related Parties
+53,BS,Federal Funds Purchased
+54,BS,Unearned Income
+55,BS,Total Deposits
+56,BS,Securities And Investments
+57,BS,Advance From Federal Home Loan Banks
+58,BS,Security Agree To Be Resell
+59,BS,Non Current Deferred Revenue
+60,BS,Non Current Deferred Liabilities
+61,BS,Restricted Cash And Investments
+62,BS,Derivative Assets
+63,BS,Payables And Accrued Expenses
+64,BS,Mortgage Loan
+65,BS,Current Deferred Taxes Liabilities
+66,BS,Preferred Securities Outside Stock Equity
+67,BS,Current Accrued Expenses
+68,BS,Available For Sale Securities
+69,BS,Trading Liabilities
+70,BS,Customer Accounts
+71,BS,Foreclosed Assets
+72,BS,Net Loan
+73,BS,Minimum Pension Liabilities
+74,BS,Gross Loan
+75,BS,Depositsby Bank
+76,BS,Cash Cash Equivalents And Federal Funds Sold
+77,BS,Security Borrowed
+78,BS,Capital Lease Obligations
+79,BS,Gains Losses Not Affecting Retained Earnings
+80,BS,Current Notes Payable
+81,BS,Allowance For Notes Receivable
+82,BS,Customer Acceptances
+83,BS,Due From Related Parties
+84,BS,Interest Bearing Deposits Assets
+85,BS,Defined Pension Benefit
+86,BS,Treasury Shares Number
+87,BS,Federal Funds Sold
+88,BS,Preferred Stock
+89,BS,Long Term Provisions
+90,BS,Other Real Estate Owned
+91,BS,Preferred Stock Equity
+92,BS,Held To Maturity Securities
+93,BS,Securities Loaned
+94,BS,Current Capital Lease Obligation
+95,BS,Preferred Shares Number
+96,BS,Federal Home Loan Bank Stock
+97,BS,Derivative Product Liabilities
+98,BS,Income Tax Payable
+99,BS,Cash And Due From Banks
+100,BS,Other Equity Adjustments
+101,BS,Assets Held For Sale
+102,BS,Gross Notes Receivable
+103,BS,Other Short Term Investments
+104,BS,Deferred Assets
+105,BS,Restricted Investments
+106,BS,Loans Held For Sale
+107,BS,Financial Instruments Sold Under Agreements To Repurchase
+108,BS,Current Deferred Revenue
+109,BS,Other Liabilities
+110,BS,Notes Receivable
+111,BS,Federal Funds Sold And Securities Purchase Under Agreements To Resell
+112,BS,Fixed Assets Revaluation Reserve
+113,BS,Foreign Currency Translation Adjustments
+114,BS,Long Term Capital Lease Obligation
+115,BS,Non Interest Bearing Deposits
+116,BS,Commercial Loan
+117,BS,Subordinated Liabilities
+118,BS,Bank Owned Life Insurance
+119,BS,Current Provisions
+120,BS,Unrealized Gain Loss
+121,BS,Trading Securities
+122,BS,Liabilities Of Discontinued Operations
+123,BS,Commercial Paper
+124,BS,Current Deferred Liabilities
+125,BS,Treasury Stock
+126,BS,Restricted Cash And Cash Equivalents
+127,BS,Other Intangible Assets
+128,BS,Federal Funds Purchased And Securities Sold Under Agreement To Repurchase
+129,BS,Line Of Credit
+130,BS,Other Assets
+131,BS,Deferred Tax Assets
+132,BS,Interest Bearing Deposits Liabilities
+133,BS,Leases
+134,BS,Allowance For Loans And Lease Losses
+135,BS,Consumer Loan
+136,BS,Other Loan Assets
+137,BS,Employee Benefits
+138,BS,Receivables
+139,BS,Money Market Investments
+140,BS,Dividends Payable
+141,CF,Capital Expenditure Reported
+142,CF,Common Stock Payments
+143,CF,Net Long Term Debt Issuance
+144,CF,Free Cash Flow
+145,CF,Issuance Of Debt
+146,CF,Capital Expenditure
+147,CF,Common Stock Dividend Paid
+148,CF,Common Stock Issuance
+149,CF,Changes In Cash
+150,CF,Net Issuance Payments Of Debt
+151,CF,Net Other Financing Charges
+152,CF,Classesof Cash Payments
+153,CF,Cash Flowsfromusedin Operating Activities Direct
+154,CF,Net Business Purchase And Sale
+155,CF,Net Purchase And Sale
+156,CF,Effect Of Exchange Rate Changes
+157,CF,Beginning Cash Position
+158,CF,Financing Cash Flow
+159,CF,Other Cash Paymentsfrom Operating Activities
+160,CF,Long Term Debt Issuance
+161,CF,Long Term Debt Payments
+162,CF,Net Other Investing Changes
+163,CF,Interest Paid
+164,CF,Purchase Of
+165,CF,Issuance Of Capital Stock
+166,CF,Repurchase Of Capital Stock
+167,CF,Purchase Of Business
+168,CF,Net Common Stock Issuance
+169,CF,Other Cash Receiptsfrom Operating Activities
+170,CF,Repayment Of Debt
+171,CF,Investing Cash Flow
+172,CF,Classesof Cash Receiptsfrom Operating Activities
+173,CF,Cash Dividends Paid
+174,CF,End Cash Position
+175,CF,Paymentson Behalfof Employees
+176,CF,Change In Dividend Payable
+177,CF,Net Preferred Stock Issuance
+178,CF,All Taxes Paid
+179,CF,Change In Receivables
+180,CF,Cash Paymentsfor Loans
+181,CF,Short Term Debt Issuance
+182,CF,Interest Received
+183,CF,Proceeds From Stock Option Exercised
+184,CF,Cash Receiptsfrom Tax Refunds
+185,CF,Change In Federal Funds And Securities Sold For Repurchase
+186,CF,Net Investment Properties Purchase And Sale
+187,CF,Net Proceeds Payment For Loan
+188,CF,Change In Other Current Assets
+189,CF,Other Cash Adjustment Inside Changein Cash
+190,CF,Preferred Stock Issuance
+191,CF,Other Cash Adjustment Outside Changein Cash
+192,CF,Cash Flow From Continuing Investing Activities
+193,CF,Change In Payable
+194,CF,Sale Of Intangibles
+195,CF,Sale Of Business
+196,CF,Realized Gain Loss On Sale Of Loans And Lease
+197,CF,Net Income From Continuing Operations
+198,CF,Cash From Discontinued Operating Activities
+199,CF,Gain Loss On Sale Of Business
+200,CF,Sale Of
+201,CF,Foreign Sales
+202,CF,Payment For Loans
+203,CF,Change In Account Payable
+204,CF,Domestic Sales
+205,CF,Purchase Of Intangibles
+206,CF,Purchase Of Investment
+207,CF,Earnings Losses From Equity Investments
+208,CF,Depreciation
+209,CF,Cash Flow From Discontinued Operation
+210,CF,Decreasein Interest Bearing Depositsin Bank
+211,CF,Preferred Stock Dividend Paid
+212,CF,Change In Prepaid Assets
+213,CF,Cash Receiptsfrom Securities Related Activities
+215,CF,Proceeds Payment In Interest Bearing Deposits In Bank
+216,CF,Sale Of Investment Properties
+217,CF,Purchase Of Investment Properties
+218,CF,Change In Other Current Liabilities
+219,CF,Change In Income Tax Payable
+220,CF,Depreciation And Amortization
+221,CF,Cash Receiptsfrom Loans
+222,CF,Change In Deferred Charges
+223,CF,Short Term Debt Payments
+224,CF,Dividend Paid
+225,CF,Gain Loss On Investment Securities
+226,CF,Cash From Discontinued Investing Activities
+227,CF,Net Investment Purchase And Sale
+228,CF,Dividends Received
+229,CF,Deferred Tax
+230,CF,Asset Impairment Charge
+231,CF,Changes In Account Receivables
+232,CF,Depreciation Amortization Depletion
+233,CF,Taxes Refund Paid
+234,CF,Net Foreign Currency Exchange Gain Loss
+235,CF,Deferred Income Tax
+236,CF,Change In Accrued Expense
+237,CF,Income Tax Paid Supplemental Data
+238,CF,Amortization Of Financing Costs And Discounts
+239,CF,Cash Paymentsfor Depositsby Banksand Customers
+240,CF,Increase Decrease In Deposit
+241,CF,Amortization Of Securities
+242,CF,Cash Flow From Continuing Operating Activities
+243,CF,Proceeds From Loans
+244,CF,Stock Based Compensation
+245,CF,Other Non Cash Items
+246,CF,Depletion
+247,CF,Cash From Discontinued Financing Activities
+248,CF,Operating Gains Losses
+249,CF,Net Intangibles Purchase And Sale
+250,CF,Pension And Employee Benefit Expense
+251,CF,Change In Other Working Capital
+252,CF,Change In Working Capital
+253,CF,Change In Loans
+254,CF,Change In Tax Payable
+255,CF,Interestand Commission Paid
+256,CF,Proceeds Payment Federal Funds Sold And Securities Purchased Under Agreement To Resell
+257,CF,Amortization Cash Flow
+258,CF,Net Short Term Debt Issuance
+259,CF,Adjusted Geography Segment Data
+260,CF,Increasein Interest Bearing Depositsin Bank
+261,CF,Excess Tax Benefit From Stock Based Compensation
+262,CF,Cash Flow From Continuing Financing Activities
+264,CF,Cash Receiptsfrom Feesand Commissions
+265,CF,Unrealized Gain Loss On Investment Securities
+266,CF,Provision For Loan Lease And Other Losses
+267,CF,Interest Paid Supplemental Data
+268,CF,Operating Cash Flow
+269,CF,Sale Of Investment
+270,CF,Cash Receiptsfrom Depositsby Banksand Customers
+271,CF,Dividend Received
+272,CF,Change In Payables And Accrued Expense
+273,CF,Preferred Stock Payments
+274,CF,Amortization Of Intangibles
+275,CF,Gain Loss On Sale Of
+276,IS,Normalized
+277,IS,Net Income
+278,IS,Net Income Continuous Operations
+279,IS,Depreciation And Amortization In Income Statement
+280,IS,Tax Provision
+281,IS,Total Unusual Items
+282,IS,General And Administrative Expense
+283,IS,Net Income Common Stockholders
+284,IS,Tax Effect Of Unusual Items
+285,IS,Diluted Availto Com Stockholders
+286,IS,Minority Interests
+287,IS,Interest Expense
+288,IS,Diluted
+289,IS,Depreciation Income Statement
+290,IS,Diluted Average Shares
+291,IS,Interest Income
+292,IS,Selling And Marketing Expense
+293,IS,Net Income From Continuing And Discontinued Operation
+294,IS,Other Non Operating Income Expenses
+295,IS,Reconciled Depreciation
+296,IS,Tax Rate For Calcs
+297,IS,Total Revenue
+298,IS,Pretax Income
+299,IS,Net Interest Income
+300,IS,Impairment Of Capital Assets
+301,IS,Basic
+302,IS,Incomefrom Associatesand Other Participating Interests
+303,IS,Selling General And Administration
+304,IS,Normalized Income
+305,IS,Special Income Charges
+306,IS,Basic Average Shares
+307,IS,Write Off
+308,IS,
+309,IS,Other Special Charges
+310,IS,Net Income Including Noncontrolling Interests
+311,IS,Net Income From Continuing Operation Net Minority Interest
+312,IS,Total Unusual Items Excluding Goodwill
+313,IS,Feesand Commission Expense
+314,IS,Fees And Commissions
+315,IS,Rent And Landing Fees
+316,IS,Continuing And Discontinued Basic
+317,IS,Net Occupancy Expense
+318,IS,Gainon Saleof Investment Property
+319,IS,Net Income Discontinuous Operations
+320,IS,Securities Amortization
+321,IS,Losson Extinguishmentof Debt
+322,IS,Trust Feesby Commissions
+323,IS,Amortization Of Intangibles Income Statement
+324,IS,Interest Income After Provision For Loan Loss
+325,IS,Occupancy And Equipment
+326,IS,Securities Activities
+327,IS,Normalized Basic
+328,IS,Depreciation Amortization Depletion Income Statement
+329,IS,Dividend Income
+330,IS,Gain On Sale Of Security
+331,IS,Service Charge On Depositor Accounts
+332,IS,Basic Other Gains Losses
+333,IS,Gainon Saleof Loans
+334,IS,Earnings From Equity Interest Net Of Tax
+335,IS,Preferred Stock Dividends
+336,IS,Other Customer Services
+337,IS,Interest Income From Securities
+338,IS,Interest Expense For Long Term Debt And Capital Securities
+339,IS,Interest Expense For Short Term Debt
+340,IS,Dividend Per Share
+341,IS,Diluted Extraordinary
+342,IS,Reported Normalized Diluted
+343,IS,Basic Accounting Change
+344,IS,Net Income From Tax Loss Carryforward
+345,IS,Tax Loss Carryforward Diluted
+346,IS,Feesand Commission Income
+347,IS,Restructuring And Mergern Acquisition
+348,IS,Insurance And Claims
+349,IS,Interest Income From Loans
+350,IS,Non Interest Income
+351,IS,Salaries And Wages
+352,IS,Reported Normalized Basic
+353,IS,Diluted Continuous Operations
+354,IS,Gain Losson Saleof Assets
+355,IS,Other Non Interest Expense
+356,IS,Total Premiums Earned
+357,IS,Amortization
+358,IS,Non Interest Expense
+359,IS,Depletion Income Statement
+360,IS,Diluted Accounting Change
+361,IS,Average Dilution Earnings
+362,IS,Investment Banking Profit
+363,IS,Diluted Discontinuous Operations
+364,IS,Rent Expense Supplemental
+365,IS,Credit Card
+366,IS,Tax Loss Carryforward Basic
+367,IS,Interest Expense For Deposit
+368,IS,Other Non Interest Income
+369,IS,Interest Income From Federal Funds Sold And Securities Purchase Under Agreements To Resell
+370,IS,Interest Income From Loans And Lease
+371,IS,Normalized Diluted
+372,IS,Gain On Sale Of Business
+373,IS,Net Income Extraordinary
+374,IS,Trading Gain Loss
+375,IS,Other Interest Expense
+376,IS,Foreign Exchange Trading Gains
+377,IS,Basic Discontinuous Operations
+378,IS,Diluted Other Gains Losses
+379,IS,Equipment
+380,IS,Other Gand
+381,IS,Interest Income From Leases
+382,IS,Continuing And Discontinued Diluted
+383,IS,Professional Expense And Contract Services Expense
+384,IS,Basic Extraordinary
+385,IS,Basic Continuous Operations
+386,IS,Interest Income From Deposits
+387,IS,Credit Losses Provision
+388,IS,Other Interest Income
+389,IS,Interest Expense For Federal Funds Sold And Securities Purchase Under Agreements To Resell
+390,IS,Total Money Market Investments
