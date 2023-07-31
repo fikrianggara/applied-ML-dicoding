@@ -219,15 +219,15 @@ Terdapat berbagai algoritma dalam membangun klaster peneliti menggunakan 3 buah 
 
 pada tahap ini penulis melakukan pembangunan klaster untuk masing masing algoritma tanpa tuning hyperparameter. penulis mengambil nilai random sebagai hyperparameter masing masing algoritma. Dalam mevisualisasi data, penulis menggunakan PCA untuk mereduksi dimensi data menjadi 2 dimensi kemudian me-plot data menggunakan scatter plot dengan sumbu x dan y adalah principal component ke 1 dan 2
 
-![Alt text](image.png)
+![Alt text](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/image.png?raw=true)
 
 gambar 5. _hasil klaster Kmeans tanpa tuning (jumlah klaster = 5)_
 
-![Alt text](image-1.png)
+![Alt text](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/image-1.png?raw=true)
 
 gambar 6. _hasil klaster GMM tanpa tuning (banyak komponen = 5)_
 
-![Alt text](image-2.png)
+![Alt text](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/image-2.png?raw=true)
 
 gambar 7. _hasil klaster DBSCAN tanpa tuning (epsilon = 0.5, min sampel = 5)_
 
@@ -239,7 +239,7 @@ Berdasarkan hasil visualisasi _scatterplot_, terlihat bahwa pengelompokkan GMM d
 
 Pada Kmeans hyperparameter yang perlu dituning ialah banyaknya kluster. Di tahap ini penulis melakukan tuning Kmeans dengan perhitungan skor silhouette untuk jumlah klaster yang berbeda [[2]](https://www.sciencedirect.com/science/article/pii/S1877050922022207). Semakin tinggi skor silhouette, semakin baik.
 
-![Alt text](image-3.png)
+![Alt text](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/image-3.png?raw=true)
 
 Berdasarkan plot jumlah klaster vs skor silhouette, skor terbaik berada pada jumlah klaster = 5 dengan skor silhouette sebesar 0.915.
 
@@ -248,7 +248,7 @@ Berdasarkan plot jumlah klaster vs skor silhouette, skor terbaik berada pada jum
 Pada Kmeans hyperparameter yang perlu dituning ialah banyaknya komponen dan tipe kovarians (spherical, tied, full, atau diagonal).
 Tuning GMM dilakukan dengan teknik grid search untuk perhitungan _Bayesian Information Criterion_. setiap kombinasi banyak komponen dan tipe kovarians. Semakin rendah skor BIC, semakin baik.
 
-![Alt text](image-4.png)
+![Alt text](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/image-4.png?raw=true)
 gambar 8. plot skor banyak komponen per tipe kovarians vs skor BIC
 
 | #   | Banyak Komponen | Tipe Kovarians | Skor BIC     |
@@ -269,13 +269,13 @@ Terdapat dua parameter yang perlu ditune di algoritma DBSCAN, yaitu epsilon dan 
 menurut [[3]](https://link.springer.com/article/10.1023/A:1009745219419), sampel minimum yang paling optimal ialah 2 kali dimensi data. data yang digunakan memiliki 5 feature sehingga sampel minimum optimal yaitu 10 sampel.
 sementara epsilon terbaik bisa dilihat dari bagian siku grafik elbow epsilon [[4]](https://iopscience.iop.org/article/10.1088/1755-1315/31/1/012012). Jarak antar data dihitung dengan metode _Nearest Neighbour_
 
-![Alt text](image-5.png)
+![Alt text](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/image-5.png?raw=true)
 
 gambar 9. _plot nilai epsilon_
 
 berdasarkan gambar 9, siku grafik terdapat pada nilai epsilon antara 0.0 hingga 0.2. untuk mendapatkan epsilon terbaik yang lebih akurat, dilakukan perhitungan skor silouette untuk setiap epsilon yang berada di rentang tersebut dengan iterasi epsilon 0.01.
 
-![Alt text](image-6.png)
+![Alt text](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/image-6.png?raw=true)
 
 gambar 10. _plot skor silhouette_.
 
@@ -285,15 +285,15 @@ berdasarkan gambar 10, skor silhouette paling maksimal berada di antara 0.175 da
 
 Pada tahap ini penulis mengulang proses yang sama dengan tahap **5.1.**, hanya saja dengan hyperparameter baru yang hasil _tuning_.
 
-![Alt text](image-7.png)
+![Alt text](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/image-7.png?raw=true)
 
 gambar 11. _klaster Kmeans hasil tuning_
 
-![Alt text](image-8.png)
+![Alt text](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/image-8.png?raw=true)
 
 gambar 12. _klaster GMM hasil tuning_
 
-![Alt text](image-9.png)
+![Alt text](https://github.com/fikrianggara/applied-ML-dicoding/blob/main/submission1/assets/image-9.png?raw=true)
 
 gambar 13. _klaster DBSCAN hasil tuning_
 
